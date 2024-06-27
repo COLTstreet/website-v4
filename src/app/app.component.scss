@@ -18,6 +18,48 @@
     background-color: #F7F7F7 !important;
 }
 
+
+
+.home-section {
+    background: url("/assets/home-bk.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white !important;
+    font-size: 12px !important;
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        background: url("/assets/home-bk-phone.png");
+        background-position: bottom center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) and (orientation: portrait) {
+    .home-section {
+        background: url("/assets/home-bk-tablet-vert.png");
+        background-position: bottom center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 481px) and (orientation: landscape) {
+    .home-section {
+        background: url("/assets/home-bk-tablet.png");
+        background-position: bottom center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
 @media (max-width: 480px) {
     .about-me-section {
         background: url("/assets/about-me-bk-phone.png");
