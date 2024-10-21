@@ -1,48 +1,48 @@
-<div class="bg-gray-900 py-3 px-6 shadow-2 flex align-items-center justify-content-between fixed w-full border-bottom-1 border-gray-800 z-5"
+<div class="bg-zinc-900 py-4 px-12 shadow flex items-center justify-between fixed w-full border-b border-zinc-800 z-50"
     style="min-height: 84px">
-    <img src="assets/Logo-White.png" alt="Image" height="40" class="mr-0 lg:mr-6">
+    <img src="assets/Logo-White.png" alt="Image" class="mr-0 lg:mr-12 h-14">
     <a pRipple class="cursor-pointer block lg:hidden text-gray-400" pStyleClass="@next" enterClass="hidden"
         leaveToClass="hidden" [hideOnOutsideClick]="true">
         <i class="pi pi-bars text-4xl"></i>
     </a>
     <div
-        class="align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full bg-gray-900 left-0 top-100 z-1 shadow-2 lg:shadow-none border-1 lg:border-none border-gray-800">
-        <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row">
+        class="items-center grow justify-between hidden lg:flex absolute lg:static w-full bg-zinc-900 left-0 top-full z-10 shadow lg:shadow-none border lg:border-0 border-gray-800">
+        <ul class="list-none p-0 m-0 flex lg:items-center select-none flex-col lg:flex-row">
             <li>
                 <a pRipple (click)="scroll('home')"
-                    class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    class="flex px-12 p-4 lg:px-4 lg:py-2 items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium rounded-border cursor-pointer transition-colors duration-150">
                     <i class="pi pi-home mr-2"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
                 <a pRipple (click)="scroll('portfolio')"
-                    class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    class="flex px-12 p-4 lg:px-4 lg:py-2 items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium rounded-border cursor-pointer transition-colors duration-150">
                     <i class="pi pi-folder-open mr-2"></i>
                     <span>Portfolio</span>
                 </a>
             </li>
             <li>
                 <a pRipple (click)="scroll('about')"
-                    class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    class="flex px-12 p-4 lg:px-4 lg:py-2 items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium rounded-border cursor-pointer transition-colors duration-150">
                     <i class="pi pi-user mr-2"></i>
                     <span>About Me</span>
                 </a>
             </li>
         </ul>
-        <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row">
-            <li class="flex-order-2 lg:flex-order-0">
+        <ul class="list-none p-0 m-0 flex lg:items-center select-none flex-col lg:flex-row">
+            <li class="order-2 lg:order-none">
                 <p-button label="Download CV" [raised]="true" />
             </li>
-            <li class="border-top-1 border-gray-800 lg:border-top-none">
+            <li class="border-t border-gray-800 lg:border-t-0">
                 <a pRipple href="https://www.linkedin.com/in/coltstreet/" target="_blank"
-                    class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    class="flex px-12 p-4 lg:px-4 lg:py-2 items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium rounded-border cursor-pointer transition-colors duration-150">
                     <i class="pi pi-linkedin mr-2"></i>
                 </a>
             </li>
-            <li class="border-top-1 border-gray-800 lg:border-top-none">
+            <li class="border-t border-gray-800 lg:border-t-0">
                 <a pRipple href="https://github.com/COLTstreet" target="_blank"
-                    class="flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium border-round cursor-pointer transition-colors transition-duration-150">
+                    class="flex px-12 p-4 lg:px-4 lg:py-2 items-center text-gray-400 hover:text-white hover:bg-gray-800 font-medium rounded-border cursor-pointer transition-colors duration-150">
                     <i class="pi pi-github mr-2"></i>
                 </a>
             </li>

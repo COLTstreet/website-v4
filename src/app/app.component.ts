@@ -1,8 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './common/header/header.component';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
+import { PrimeNGConfig } from 'primeng/api';
+import { definePreset } from 'primeng/themes';
+import { Aura } from 'primeng/themes/aura';
+
+const myTheme = definePreset(Aura, {
+  semantic: {
+      primary: {
+          50: '{emerald.100}',
+          100: '{emerald.100}',
+          200: '{emerald.200}',
+          300: '{emerald.300}',
+          400: '{emerald.400}',
+          500: '{emerald.500}',
+          600: '{emerald.600}',
+          700: '{emerald.700}',
+          800: '{emerald.800}',
+          900: '{emerald.900}',
+          950: '{emerald.950}'
+      }
+  }
+});
 
 @Component({
   selector: 'app-root',
@@ -12,7 +33,17 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'website-v4';
+  
+  public config: PrimeNGConfig = inject(PrimeNGConfig);
+
+  constructor() {
+    // this.config.theme.set({ preset: Aura })
+    // this.config.theme.set(cokePreset);
+    
+    this.config.theme.set({
+      preset: myTheme,
+    });
+  }
 
   goToLink(id: any) {
     if(id === 1) {
